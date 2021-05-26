@@ -5,8 +5,8 @@ import datetime
 
 class Database:
     def __init__(self):
-        # self.client = MongoClient('localhost', 27017)
-        self.client = MongoClient('localhost', 27100)
+        #pymongo.MongoClient("mongodb+srv://Nastya:<password>@marks.sz4xr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        self.client = MongoClient("mongodb+srv://Nastya:xqYWxoIiDGbmzDzz@marks.sz4xr.mongodb.net/marks_db?retryWrites=true&w=majority")
         self.db = self.client['marks_db']
         self.collection = self.db['marks']
 
